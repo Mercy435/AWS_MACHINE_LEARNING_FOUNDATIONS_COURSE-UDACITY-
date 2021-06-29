@@ -1,0 +1,207 @@
+A machine learning model is a block of code or framework that can be modified to solve different but related problems
+based on the data provided.
+
+A model is an extremely generic program, made specific by the data used to train it.
+
+Model training algorithms work through an interactive process where the current model iteration is analyzed to
+determine what changes can be made to get closer to the goal. Those changes are made and the iteration continues until the model is evaluated to meet the goals.
+
+Model inference is when the trained model is used to generate predictions
+
+Impute is a common term referring to different statistical tools which can be used to calculate missing values
+from your dataset.
+
+Outliers are data points that are significantly different from others in the same sample.
+
+Model Training Terminology
+The model training algorithm iteratively updates a model's parameters to minimize some loss function.
+
+Model parameters: Model parameters are settings or configurations the training algorithm can update to change
+how the model behaves.
+
+Weights, which are values that change as the model learns, are more specific to neural networks.
+
+Loss function: A loss function is used to codify the model’s distance from this goal.
+
+Linear models are fast to train and give you a great baseline against which to compare more complex models.
+
+Deep learning models
+Extremely popular and powerful, deep learning is a modern approach based around a conceptual model of how
+the human brain functions.
+
+The model (also called a neural network) is composed of collections of neurons (very simple computational units)
+connected together by weights (mathematical representations of how much information to allow to flow from one
+neuron to the next)
+
+FFNN: The most straightforward way of structuring a neural network, the Feed Forward Neural Network (FFNN)
+structures neurons in a series of layers, with each neuron in a layer containing weights to all neurons in
+the previous layer.
+
+CNN: Convolutional Neural Networks (CNN) represent nested filters over grid-organized data.
+They are by far the most commonly used type of model when processing images.
+
+RNN/LSTM: Recurrent Neural Networks (RNN) and the related Long Short-Term Memory (LSTM) model types are
+structured to effectively represent for loops in traditional computing,
+collecting state while iterating over some object. They can be used for processing sequences of data.
+
+Transformer: A more modern replacement for RNN/LSTMs, the transformer architecture enables training over larger datasets involving sequences of data.
+
+Hyperparameters are settings on the model which are not changed during training but can affect how quickly or how
+reliably the model trains, such as the number of clusters the model should identify. WHILE
+Model parameters are settings or configurations the training algorithm can update to change how the model behaves.
+
+Log loss seeks to calculate how uncertain your model is about the predictions it is generating.
+In this context, uncertainty refers to how likely a model thinks the predictions being generated are to be correct.
+
+Model Accuracy is the fraction of predictions a model gets right.
+
+METRICS FOR REGRESSION
+Mean absolute error (MAE): This is measured by taking the average of the absolute difference between the
+actual values and the predictions. Ideally, this difference is minimal.
+
+Root mean square error (RMSE): This is similar MAE, but takes a slightly modified approach so values with
+large error receive a higher penalty.
+RMSE takes the square root of the average squared difference between the prediction and the actual value.
+it is also called AVERAGE ERROR(and should be low)
+
+Coefficient of determination or R-squared (R^2): This measures how well-observed outcomes are actually
+predicted by the model, based on the proportion of total variation of outcomes.
+
+Once you have trained your model, have evaluated its effectiveness, and are satisfied with the results,
+you're ready to generate predictions on real-world problems using unseen data in the field.
+In machine learning, this process is often called inference
+
+Model inference involves...
+
+Generating predictions.
+
+Finding patterns in your data.
+
+Using a trained model.
+
+Testing your model on data it has not seen before.
+
+
+
+predicting the height (label) of a thrown projectile over time (input variable). is not linear; it's curved.
+Any straight line you try to use to describe this phenomenon would be invalid for a large range of the projectile's
+trajectory.
+
+Techniques do exist to modify your data so you can still use linear models in these situations.
+Such methods are called kernel method
+
+"a' "the' are referred to as STOP WORDS in ML
+
+the silhouette coefficient is a good metric for measuring unsupervised learning(clustering) and k-means is a good
+baseline model to start with... k is the no of clusters we want to find
+
+MACHINE LEARNING GLOSSARY
+1. Bag of words: A technique used to extract features from the text. It counts how many times a word appears in a
+document (corpus), and then transforms that information into a dataset.
+
+2. Data vectorization: A process that converts non-numeric data into a numerical format so that it can be used by
+a machine learning model.
+
+3. Silhouette coefficient: A score from -1 to 1 describing the clusters found during modeling. A score near zero
+indicates overlapping clusters, and scores less than zero indicate data points assigned to incorrect clusters.
+A score approaching 1 indicates successful identification of discrete non-overlapping clusters.
+
+4. Stop words: A list of words removed by natural language processing tools when building your dataset.
+There is no single universal list of stop words used by all-natural language processing tools.
+
+5. CNN (convolutional neural network)
+Neural networks are a collection of very simple models connected together. These simple models are called neurons,
+and the connections between these models are trainable model parameters called weights.
+CNN: Convolutional Neural Networks (CNN) represent nested filters over grid-organized data.
+They are by far the most commonly used type of model when processing images.
+
+Precision and Recall will be effective for image detection, spill or no spill( supervised learning).
+You can think of precision as answering the question, "Of all predictions of a spill, how many were right?"
+and recall as answering the question, "Of all actual spills, how many did we detect?"
+
+6. A categorical label has a discrete set of possible values, such as "is a cat" and "is not a cat."
+
+7. Clustering-Unsupervised learning task that helps to determine if there are any naturally occurring groupings
+in the data.
+
+8. A continuous (regression) label does not have a discrete set of possible values, which means possibly an
+unlimited number of possibilities.
+
+9. Data vectorization: A process that converts non-numeric data into a numerical format so that it can be
+used by a machine learning model.
+
+10. Discrete: A term taken from statistics referring to an outcome taking on only a finite number of values
+(such as days of the week).
+
+11. FFNN: The most straightforward way of structuring a neural network, the Feed Forward Neural Network (FFNN)
+structures neurons in a series of layers, with each neuron in a layer containing weights to all neurons in the
+previous layer.
+
+12. Hyperparameters are settings on the model which are not changed during training but can affect how
+quickly or how reliably the model trains, such as the number of clusters the model should identify.
+
+13. Log loss is used to calculate how uncertain your model is about the predictions it is generating.
+
+14. Hyperplane: A mathematical term for a surface that contains more than two planes.
+
+15. Impute is a common term referring to different statistical tools which can be used to calculate missing values
+ from your dataset.
+
+16. label refers to data that already contains the solution.
+
+17. loss function is used to codify the model’s distance from this goal
+
+18. Machine learning, or ML, is a modern software development technique that enables computers to solve p
+roblems by using examples of real-world data.
+
+19. Model accuracy is the fraction of predictions a model gets right.
+
+20. Discrete: A term taken from statistics referring to an outcome taking on only a finite number of values
+(such as days of the week).
+
+21. Continuous: Floating-point values with an infinite range of possible values. The opposite of categorical or
+discrete values, which take on a limited number of possible values.
+
+22. Model inference is when the trained model is used to generate predictions.
+
+23. Model training algorithms work through an interactive process where the current model iteration is analyzed
+to determine what changes can be made to get closer to the goal. Those changes are made and the iteration
+continues until the model is evaluated to meet the goals.
+
+24. Neural networks: a collection of very simple models connected together. These simple models are called neurons.
+ The connections between these models are trainable model parameters called weights.
+
+25. Outliers are data points that are significantly different from others in the same sample.
+
+26. Plane: A mathematical term for a flat surface (like a piece of paper) on which two points can be joined by a
+straight line.
+
+27. Regression: A common task in supervised machine learning.
+
+28. In reinforcement learning, the algorithm figures out which actions to take in a situation to maximize a
+reward (in the form of a number) on the way to reaching a specific goal.
+
+29. RNN/LSTM: Recurrent Neural Networks (RNN) and the related Long Short-Term Memory (LSTM) model types are
+structured to effectively represent for loops in traditional computing, collecting state while iterating over
+some object. They can be used for processing sequences of data.
+
+30. Stop words: A list of words removed by natural language processing tools when building your dataset.
+There is no single universal list of stop words used by all-natural language processing tools.
+
+31. In supervised learning, every training sample from the dataset has a corresponding label or output value
+associated with it. As a result, the algorithm learns to predict labels or output values.
+
+32. Test dataset: The data withheld from the model during training, which is used to test how well your
+model will generalize to new data.
+
+33. Training dataset: The data on which the model will be trained. Most of your data will be here.
+
+34. Transformer: A more modern replacement for RNN/LSTMs, the transformer architecture enables training over
+larger datasets involving sequences of data.
+
+35. In unlabeled data, you don't need to provide the model with any kind of label or solution while the model
+is being trained.
+
+36. In unsupervised learning, there are no labels for the training data. A machine learning algorithm tries to
+learn the underlying patterns or distributions that govern the data.
+
